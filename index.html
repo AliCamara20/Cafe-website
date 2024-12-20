@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Cafe website</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav_list row">
+                    <li class="nav_item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav_item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav_item"><a href="#where" class="nav__link">Where</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="cafe.jpg" alt="" class="hero_img">
+        <div class="info">
+            <h1>Ali's</h1>
+            <h1>Cafe</h1>
+        </div>
+        <div class="container row">
+            <div class="working_hours">
+                <p class="">Open from 7am to 8:45pm</p>
+            </div>
+            <div class="address">
+                <p>16 Adr Street 9064</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section about container" id="about" >
+        <div class="section_header">
+            <h3 class="section_title">About the cafe</h3>           
+        </div>
+        <p class="history">
+            Welcome to Ali's Cafe, founded by Ali Badara, 
+            a passionate coffee lover dedicated to creating a space 
+            where everyone feels at home. Nestled in the heart of Senegambia, 
+            we serve freshly brewed coffee, artisanal teas, and homemade 
+            treats crafted with care.
+
+
+        </p>
+        <p class="history">
+            At Ali's Cafe, Ali envisioned more than just a cafe—it’s 
+            a cozy haven for connection and relaxation. Whether you’re here to work, 
+            unwind, or catch up with friends, our friendly team is ready to make 
+            your visit memorable. Join us and savor the warmth in every sip and bite!
+        </p>
+
+        <div class="quote_box">
+            <p class="quote">
+                "Coffee is a language in itself."
+            </p>
+            <p class="author">
+                - Jackie Chan
+            </p>
+        </div>
+        <div class="cafe_info">
+            <img src="cafe_2.jpg" alt="" class="cafe_img">
+            <p class="opening_hours"><b>Opening hours: </b>7:00 am to 8:45pm</p>                
+            <p class="cafe_address"><b>Address: </b>16 Adr Street 9064</p>                
+        </div>    
+    </section>
+
+    <section class="section menu_section container" id="menu" >
+        <div class="section_header">
+            <h3 class="section_title">The Menu</h3>           
+        </div>
+        <div class="menu_box">
+            <div class="menu_buttons row">
+                <button class="menu_btn  food_btn" id="default_btn" onclick="openMenu(event, 'food__menu')">Eat</button>
+                <button class="menu_btn drink_btn" onclick="openMenu(event, 'drink__menu' )">Drink</button>
+            </div>
+
+            <div class="food_menu menu" id="food__menu">
+                <div class="food">
+                    <p class="food_name"><b>Warm Croissant Basket</b></p>
+                    <p class="food_info">A selection of flaky croissants—plain, chocolate, and almond. 6.50</p>
+                </div>
+
+                <div class="food">
+                    <p class="food_name"><b>Garden Herb Quiche</b></p>
+                    <p class="food_info">Savory egg custard with spinach, mushrooms, and herbs in a golden crust. 7.50</p>
+                </div>
+
+                <div class="food">
+                    <p class="food_name"><b>Rustic Toast Board</b></p>
+                    <p class="food_info">Artisan bread served with butter, jam, and honey for a simple, delightful treat. 5.50</p>
+                </div>
+
+                <div class="food">
+                    <p class="food_name"><b>Classic Scones & Cream</b></p>
+                    <p class="food_info">Freshly baked scones with clotted cream and seasonal jam. 6.00</p>
+                </div>
+
+                <div class="food">
+                    <p class="food_name"><b>Signature Coffee Cake</b></p>
+                    <p class="food_info">Moist, cinnamon-infused cake with a crumbly topping, perfect with coffee. 4.50</p>
+                </div>
+            </div>
+            <div class="drink_menu menu" id="drink__menu">
+                <div class="drink">
+                    <p class="drink_name"><b>House Blend Coffee</b></p>
+                    <p class="drink_info">A smooth and balanced brew made with freshly roasted beans. 3.00</p>
+                </div>
+                <div class="drink">
+                    <p class="drink_name"><b>Classic Chai Tea</b></p>
+                    <p class="drink_info">A comforting blend of spiced tea and steamed milk. 4.00</p>
+                </div>
+                <div class="drink">
+                    <p class="drink_name"><b>Lavender Honey Cold Brew</b></p>
+                    <p class="drink_info">Refreshing cold brew sweetened with lavender syrup and a drizzle of honey. 4.75</p>
+                </div>
+                <div class="drink">
+                    <p class="drink_name"><b>Golden Turmeric Latte</b></p>
+                    <p class="drink_info">Steamed milk infused with turmeric, cinnamon, and a touch of honey. 4.50</p>
+                </div>
+                <div class="drink">
+                    <p class="drink_name"><b>Citrus Sparkling Refresher</b></p>
+                    <p class="drink_info">A zesty mix of orange juice, soda water, and a splash of grenadine. 4.25</p>
+                </div>    
+            </div>
+        </div>
+        <img src="coffee.jpg" alt="" class="cafe_img" style="aspect-ratio: 1/ .5; object-fit: cover;" >
+    </section>
+
+    <section class="section location container" id="where" >
+        <div class="section_header">
+            <h3 class="section_title">Where to find us</h3>           
+        </div>
+        <div class="place">
+            <p>Find us in Banjul  at 16 Adr Street, 9064, BJL. </p>
+             
+            <img src="location.jpeg" alt="">
+            <p><mark style="text-align: center; color: #fff; background-color: #000;">FYI!</mark> We offer full-service catering for any event, 
+                large or small. We understand your needs and we will cater
+                the food to satisfy the biggerst criteria of them all, 
+                both look and taste.
+            </p>
+            <p><b>Reserve </b>a table, ask for today's special or just send us a message:</p>
+
+            <form action=""  id="reservation_form">
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="text" inputmode="numeric" placeholder="How many people">
+                <input type="datetime-local" name="" id="" >
+                <input type="submit" value="Send message">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h4>Powered by <a href="" style="color: #000;">CSS</a></h4>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
