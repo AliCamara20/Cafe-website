@@ -257,6 +257,10 @@ footer h4{
     .working_hours{
         display: block;
     }
+
+    .emphasis{
+        color: black;
+    }
 }
 
 
